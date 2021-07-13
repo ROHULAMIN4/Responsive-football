@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+ 
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  width: 1440px;
+  margin: auto;
+ 
+}
+/* start header  */
+
+
+/* start main */
+.main-class {
+  display: flex;
+  align-items: center;
+ 
+  flex-direction: column;
+}
+.main-section {
+   
+  
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.wrap-box {
+  height: 474px;
+  width: 330px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  margin: 0px 10px 18px 10px;
+ 
+}
+.img-tag {
+}
+.img-tag img {
+  width: 100%;
+}
+/* main section end  */
+
+
+/* copa heightlight */
+.heightlight-section{
+    margin-top: 167px;
+}
+.main-block{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.description-copa{
+    align-items: center;
+}
+.description-copa h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+.description-copa p{
+   
+    line-height: 28px;
+}
+.description-copa a{
+    text-decoration: none;
+    background-color: 
+   
+    #E02C6D ;
+    color: white;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+.description-copa a:hover{
+    background-color: #ff0560;
+    border-radius: 20px;
+    transition: .07s;
+}
+.description-copa i{
+    margin-left: 16px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.description-copa:hover i{
+    color: black;
+   
+  
+}
+.copa-img img{
+    width: 567px;
+height: 427px;}
+
+
+/* copa heighleight  end */
+
+
+
+/* footer start */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section{
+    margin-top: 167px;
+    margin-bottom: 50px;
+    
+}
+.footer-section p{
+    
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+}
+.footer-icon i{
+    margin: 0px 14px;
+    background-color:#E7E7E8;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+/* footer end */

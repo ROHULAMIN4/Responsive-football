@@ -10,7 +10,69 @@ body {
   margin: auto;
  
 }
+.header-img img{
+    width: 70%;
+    align-items: center;
+    margin-left: 100px;
+    margin: 20px 0px;
+}
 /* start header  */
+.container{
+    justify-content: center;
+   
+  
+    display: flex;
+}.haid-block{
+    width: 1440px;
+    display: grid;
+    padding: 30px 10px 40px 10px;
+   
+    background-color: blue;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.header-img img{
+    padding-left: 40px;
+}
+.haid-block:hover .header-img img{
+    animation: animate 4s linear infinite    ;
+
+}
+
+.head-describe a:hover{
+    background-color: #ff0560;
+    border-radius: 20px;
+    
+    transition: .07s;
+}
+.head-describe a{
+    background: #E02C6D;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 20px 0px;
+}
+.head-describe{
+    margin-left: 200px;
+}
+
+.head-describe h1{
+    color: white;
+    font-size: 64px;
+    
+}
+.head-describe i{
+    margin-left: 10px;
+} 
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(10deg) translate(100px);
+    }
+}
+
 
 
 /* start main */
@@ -21,9 +83,7 @@ body {
   flex-direction: column;
 }
 .main-section {
-   
-  
-  
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -89,7 +149,40 @@ body {
 .copa-img img{
     width: 567px;
 height: 427px;}
+/* video section 
+ */
 
+     
+   
+   .win-copa {
+       margin-top: 50px;
+   }
+    
+ .win-copa h1{
+     text-align: center;
+     color:#2D25A0 ;
+ }
+ video{
+   
+    width: 90%;
+    margin: 30px;
+    
+   
+ }
+ .gaol{
+    
+     display: flex;
+
+ }
+ /* ranking player */
+ .player-name ol li{
+     font-size: 25px;
+     line-height: 47px;
+
+ }
+ .player-name ol li span{
+     color: red;
+ }
 
 /* copa heighleight  end */
 
@@ -126,3 +219,53 @@ footer{
     justify-content: center;
 }
 /* footer end */
+
+
+/* meadia query */
+@media only screen and (max-width: 688px) {
+    body{
+        width: 100%;
+    }
+    .haid-block{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-section,.main-block {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container{
+        flex-direction: column;
+    }
+    .copa-img img{
+        margin-top: 20px;
+    }
+    .footer-section img{
+        width: 80%;
+    }
+
+} 
+@media only screen and (min-width:689px) and (max-width:992px){
+    body{
+        width: 100%;
+    }
+    .haid-block{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-section {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main-block{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container{
+        flex-direction: column;
+    }
+    .copa-img img{
+        margin-top: 20px;
+    }
+    .footer-section img{
+        width: 80%;
+    }
+
+} 
